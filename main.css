@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+    background-color: rgb(245, 183, 69);
+
+}
+
+header{
+    background-color: rgb(73, 26, 26);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(186, 70, 70);
+    padding: 0.5rem 1rem;
+    margin: 0 1rem 0 1rem; /*(superior / direota / inferior / esquerda)*/
+    border-radius: 4px;
+}
+
+nav a:hover{
+    background-color: rgb(206, 97, 97) ;
+}
+
+main{
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.categoria{
+    margin-bottom: 2rem;
+}
+
+.produto{
+    background-color:#fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    
+}
+
+.preco{
+    font-weight: bold;
+    color: rgb(73, 26, 26);
+    font-size: 22px;
+    margin-bottom: 1rem;
+
+}
+
+.adicionar {
+    background-color: rgb(186, 70, 70);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(206, 97, 97);
+
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(73, 26, 26);
+    color: #fff;
+    padding: 1rem 0;
+};
+
+
+
+
+/* Adiciona Media Query para tornar o projeto responsivo*/
+@media (min-width: 768px){
+    main{
+        width: 60%;
+
+    }
+    .categotria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmaax (250px, 1fr));
+        gap: 1rem;
+    }
+}
